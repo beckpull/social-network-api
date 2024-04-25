@@ -22,7 +22,7 @@ This repository contains a basic REST API built with Node.js, Express.js, MongoD
     <a href="https://github.com/beckpull/social-network-api"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://social-network-api-ravs.onrender.com">View Page</a>
+    <a href="#">View Demo</a>
     ·
     <a href="https://github.com/beckpull/social-network-api/issues">Report Bug</a>
     ·
@@ -65,15 +65,16 @@ This repository contains a basic REST API built with Node.js, Express.js, MongoD
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-**TechBlog** is a content management system (CMS) inspired by popular blogging platforms like WordPress, designed specifically for tech enthusiasts. With TechBlog, users can create an account, publish posts on various tech topics, engage in discussions through comments, and explore a vibrant community of like-minded individuals.
+This project is a RESTful API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. It utilizes Express.js for routing, a MongoDB database, and the Mongoose ODM. The goal of this project is to build a robust API capable of handling large amounts of unstructured data typical of a social network. It provides endpoints for creating, reading, updating, and deleting users, thoughts, reactions, and managing friend lists.
 
-**Key Features:**
+**Key Features**:
 
-- **User Authentication**: Secure user authentication system allowing users to create accounts and log in securely.
-- **Create and Publish Posts**: Users can easily create, edit, and publish posts on a wide range of tech-related topics.
-- **Commenting System**: Engage in discussions by commenting on posts, fostering a dynamic community atmosphere.
-- **Responsive Design**: Fully responsive design ensures seamless user experience across devices, from desktops to mobile devices.
-- **Interactive Dashboard** : Intuitive dashboard for users to manage/update/delete their posts effortlessly. 
+- **Express.js**: Utilizes Express.js for handling routing and middleware, providing a flexible and scalable architecture for the API.
+- **MongoDB with Mongoose**: Integrates MongoDB as the database backend, with Mongoose providing object modeling for Node.js, simplifying interactions with the database.
+- **CRUD Operations**: Implements endpoints for performing CRUD operations on users, thoughts, reactions, and friend lists, allowing for seamless management of data.
+- **Asynchronous Operations**: Handles database operations asynchronously to ensure optimal performance and scalability.
+- **Error Handling**: Includes robust error handling to provide informative responses in case of invalid requests or server errors.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,9 +84,12 @@ This repository contains a basic REST API built with Node.js, Express.js, MongoD
 
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![NodeJS]
+* ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 * ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-* ![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-* ![Sequelize](https://img.shields.io/badge/sequelize.js-323330?style=for-the-badge&logo=sequelize&logoColor=blue)
+* ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+* ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
+* ![MongoDB](https://img.shields.io/badge/Mongoose•odm-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=darkgreen)
+* ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 * ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
