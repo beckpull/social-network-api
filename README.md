@@ -135,27 +135,28 @@ _To get a local copy up and running follow these simple example steps:_
 </br></br>
 
 <div align="center"> 
-<!-- <strong><i>Click <a href="https://social-network-api-ravs.onrender.com">HERE</a> to view this site in action!</strong>
-  </br></br>
-  <p><strong></i>This is what users see upon entering the site:</i></strong></p>
-      <img src="./public/img/homepage.png" width="800">
-  </br></br>
+<img src="./assets/qr.png" alt="qr code for demo video">
+<strong><i>Scan the QR code above or click <strong><a href="#">HERE</a></strong> to view a demo video of the following API routes</strong>
+  </br>
   <a href="https://github.com/beckpull/social-network-api">
-   <p>Log in/Sign up</p>
-    <img src="./public/img/login.png" width="444">
-    <img src="./public/img/signup.png" width="370">
+   <p>/api/users</p>
+    <img src="./assets/users.png">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/social-network-api">
-    <p>User Dashboard</p>
-    <img src="./public/img/dashboard.png" width="800">
+    <p>/api/users/:userId/friends/:friendId</p>
+    <img src="./assets/friends.png">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/social-network-api">
-    <p>Clicking into a post</p>
-    <img src="./public/img/post.png" width="800">
+    <p>/api/thoughts</p>
+    <img src="./assets/thoughts.png">
   </a>
-</br></br> -->
+  <a href="https://github.com/beckpull/social-network-api">
+    <p>/api/thoughts/:thoughtId/reactions</p>
+    <img src="./assets/reactions.png">
+  </a>
+</br></br>
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -163,17 +164,11 @@ _To get a local copy up and running follow these simple example steps:_
 <!-- ROADMAP -->
 ## Roadmap
 
-<img src="./public/img/schema-roadmap.png">
+<img src="./assets/roadmap.png">
 <div align="right">
-  <p><i>This was how I chose to set up my schema for this project</i></p>
+  <p><i>This was my roadmap for this project</i></p>
 </div>
-</br></br></br>
-<div align="center">
-  <img src="./public/img/roadmap.png" height="1000">
-</div>
-<div align="right">
-  <p><i>This was my roadmap to completing all of the acceptance criteria</i></p>
-</div>
+</br>
 <!-- GIVEN a social network API
 WHEN I enter the command to invoke the application
 THEN my server is started and the Mongoose models are synced to the MongoDB database
