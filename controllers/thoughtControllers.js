@@ -5,8 +5,8 @@ module.exports = {
     try {
       const thoughts = await Thought.find();
       res.status(200).json(thoughts);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -19,8 +19,8 @@ module.exports = {
       }
 
       res.status(200).json(thought);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -28,8 +28,8 @@ module.exports = {
     try {
       const newThought = await Thought.create(req.body);
       res.status(200).json(newThought);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -47,8 +47,8 @@ module.exports = {
 
       res.status(200).json(updatedUser);
 
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -62,24 +62,24 @@ module.exports = {
 
       res.status(200).json(deletedThought);
 
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
   async addReaction(req, res) {
     try {
       
-    } catch (error) {
-      console.log(error);
-      res.status(500).json(err);
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(e);
     }
   },
   async removeReaction(req, res) {
     try {
       
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },

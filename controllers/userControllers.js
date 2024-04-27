@@ -5,8 +5,8 @@ module.exports = {
     try {
       const users = await User.find();
       res.status(200).json(users);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -19,8 +19,8 @@ module.exports = {
       }
 
       res.status(200).json(user);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -28,8 +28,8 @@ module.exports = {
     try {
       const newUser = await User.create(req.body);
       res.status(200).json(newUser);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -47,8 +47,8 @@ module.exports = {
 
       res.status(200).json(updatedUser);
 
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -64,24 +64,24 @@ module.exports = {
 
       res.status(200).json({ deletedUser: deletedUser, deletedThoughts: deletedThoughts});
 
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
   async addFriend(req, res) {
     try {
       
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
   async removeFriend(req, res) {
     try {
       
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   }

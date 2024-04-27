@@ -18,9 +18,9 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: function () {
-                return `${createdAt}`;
-            }
+            // get: function () {
+            //     return `${createdAt}`;
+            // }
         }
     },
     {
