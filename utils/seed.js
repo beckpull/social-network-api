@@ -31,7 +31,16 @@ connection.once('open', async () => {
   }
 
   await User.collection.insertMany(users);
+  // const insertedUsers = await User.find();
+
+  // // Assign a userId to each thought from the inserted users
+  // const thoughtsWithUserId = thoughts.map((thought, index) => ({
+  //   ...thought,
+  //   userId: insertedUsers[index]._id // Assigning userId from the corresponding user
+  // }));
+
   await Thought.collection.insertMany(thoughts);
+
 
   // loop through the saved videos, for each video we need to generate a video response and insert the video responses
   console.table(users);

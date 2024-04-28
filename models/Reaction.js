@@ -1,4 +1,4 @@
-const { Schema, ObjectId } = require('mongoose');
+const { Schema, Types } = require('mongoose');
 
 const reactionSchema = new Schema(
     {
@@ -18,9 +18,7 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // get: function () {
-            //     return `${createdAt}`;
-            // }
+            get: (date)=> `${date.toLocaleDateString("en-US")} at ${date.toLocaleTimeString()}`
         }
     },
     {
@@ -28,6 +26,7 @@ const reactionSchema = new Schema(
             getters: true,
         },
         id: false,
+        _id: false
     }
 );
 

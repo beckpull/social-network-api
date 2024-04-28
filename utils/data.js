@@ -118,6 +118,7 @@ const possibleThoughts = [
         thoughtText: getRandomArrItem(possibleThoughts),
         username: getRandomUsername(),
         reactions: [...getReactions(3)],
+        // userId: 
       });
     }
     return results;

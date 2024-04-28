@@ -1,4 +1,5 @@
-const { Schema, ObjectId, model } = require('mongoose');
+const { Schema, model } = require('mongoose');
+
 const reactionSchema = require('./Reaction');
 
 const thoughtSchema = new Schema(
@@ -12,30 +13,30 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // get: function() {
-            //     return `${createdAt}`;
-            // }
+            get: (date)=> `${date.toLocaleDateString("en-US")} at ${date.toLocaleTimeString()}`
         },
         username: {
             type: String,
             required: [true, "thought username required"],
         },
-        reactions: [reactionSchema]
+        reactions: [reactionSchema],
+        // userId: {
+        //     type: Schema.Types.ObjectId,
+        //     ref: 'user',
+        // }
     },
     {
         toJSON: {
             getters: true,
             virtuals: true,
-        }
+        },
+        id: false,
     }
 );
 
 thoughtSchema.virtual('reactionCount')
-.get(function () { // ASYNC IF NEED AWAIT
-    const numReactions = { $count: this.friends };
-    return numReactions;
-    // const reactionCount = await this.model('user').countDocuments({ friends: this._id });
-    // return reactionCount;
+.get(function () {
+    return this.reactions.length;
 });
 
 const Thought = model('thought', thoughtSchema);
