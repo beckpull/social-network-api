@@ -140,21 +140,25 @@ _To get a local copy up and running follow these simple example steps:_
   </br>
   <a href="https://github.com/beckpull/social-network-api">
    <p>/api/users</p>
-    <img src="./assets/users.png">
+    <img src="./assets/users1.png" width="300">
+    <img src="./assets/users2.png" width="300">
+    <img src="./assets/users3.png" width="523">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/social-network-api">
     <p>/api/users/:userId/friends/:friendId</p>
-    <img src="./assets/friends.png">
+    <img src="./assets/friendsPOST.png" width="605">
+    <img src="./assets/friendsDELETE.png" width="647">
   </a>
   </br></br>
   <a href="https://github.com/beckpull/social-network-api">
     <p>/api/thoughts</p>
-    <img src="./assets/thoughts.png">
+    <img src="./assets/thoughts.png" width="700">
   </a>
   <a href="https://github.com/beckpull/social-network-api">
-    <p>/api/thoughts/:thoughtId/reactions</p>
-    <img src="./assets/reactions.png">
+    <p>/api/thoughts/:thoughtId/</p>
+    <img src="./assets/singleThought.png" width="700">
+    <img src="./assets/singleThought2.png" width="500">
   </a>
 </br></br>
 </div>
