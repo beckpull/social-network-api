@@ -104,33 +104,6 @@ module.exports = {
     try {
       const { reactionBody, username } = req.body;
 
-      // Extract thoughtId and reactionId from request parameters
-      const { thoughtId, reactionId } = req.params;
-
-      // Construct the new reaction object
-      const newReaction = { reactionBody, username };
-
-      // Update the thought with the specified reactionId
-      const updatedThought = await Thought.findOneAndUpdate(
-        { _id: thoughtId, "reactions.reactionId": reactionId }, // Use "reactions.reactionId" to match the specific reaction by its ID
-        { $set: { "reactions.$": newReaction } },
-        { runValidators: true, new: true }
-      );
-
-      if (!updatedThought) {
-        return res.status(404).json({ message: "No thought or reaction with that ID found." });
-      }
-
-      res.status(200).json(updatedThought);
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
-  },
-  async updateReaction(req, res) {
-    try {
-      const { reactionBody, username } = req.body;
-
         const { thoughtId, reactionId } = req.params;
 
         const newReaction = { reactionBody, username };
