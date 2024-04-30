@@ -2,35 +2,51 @@ Module 18 Walkthrough Video:
 
 npm run dev
 
-GET /users
 GET /thoughts
+GET /users
 
 POST /users
 {
-    "username": "test",
-    "email": "test@email.com"
+    "username": "user-post-route",
+    "email": "post-route@email.com"
 }
 
-userId: 663118bd3457292094c3fd6b
+                                              userId: 66312c59ae7b5baa8be6f3b5
 
 POST /users/:userId/friends
 {
 	"friendId": "66305eb98e0124bb744546af"
 }
 
+GET /users/:userId
+
+DELETE /users/:userId/friends
+{
+	"friendId": "66305eb98e0124bb744546b2"
+}
+
 PUT /users/:userId
 {
     "username": "beckpull",
-	"email": "put-user-test@example.com"
+	"email": "put-user-route@example.com"
 }
 
 POST /thoughts
 {
-    "thoughtText": "This is a test thought",
+    "thoughtText": "This is a POSTed thought",
+    "username": "beckpull"
+}
+                                               thoughtId: 66312c95ae7b5baa8be6f3bd 
+
+POST /thoughts
+{
+    "thoughtText": "This I will DELETE.",
     "username": "beckpull"
 }
 
-thoughtId: 663119283457292094c3fd71 
+DELETE /thoughts/GRAB SECOND ID FROM UPDATED USER
+
+/GET thoughts
 
 PUT /thoughts/:thoughtId
 {
@@ -39,26 +55,21 @@ PUT /thoughts/:thoughtId
 
 POST /thoughts/:thoughtId/reactions
 {
-	"reactionBody": "This is a test reaction",
+	"reactionBody": "This is a POSTed reaction",
 	"username": "beckpull"
 }
 
+GET /thoughts
+GET /thoughts/:thoughtId
 
-reactionId: 6631195f3457292094c3fd75
+** PASTE reactionId BELOW!!!!! **
 
 DELETE /thoughts/:thoughtId/reactions
 {
-	"reactionId": "6631195f3457292094c3fd75"
-}
-
-DELETE /users/:userId/friends
-{
-	"friendId": "66305eb98e0124bb744546af"
+	"reactionId": "66312cd2ae7b5baa8be6f3de"
 }
 
 GET /users/:userId
-
-GET /thoughts/:thoughtId
 
 DELETE /users/:userId
 

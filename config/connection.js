@@ -5,6 +5,6 @@ const connectionString = process.env.MONGO_CONNECT;
 
 connect(connectionString);
 
-console.log("Connected to MongoDB - socialNetworkDB 📊")
+console.log("Connected & synced to MongoDB - socialNetworkDB 📊")
 
 module.exports = connection;
