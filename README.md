@@ -107,7 +107,9 @@ _This application has several dependencies, to install individually onto your ma
   npm i express
   npm i mongodb
   npm i mongoose
+  npm i dotenv
   npm i nodemon --save-dev
+  npm i jest --save-dev
   ```
 
 ### Installation
