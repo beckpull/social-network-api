@@ -30,4 +30,4 @@ node_modules
 package-lock.json
 .vscode
 dist/
-video.txt
+.txt
