@@ -22,7 +22,7 @@ This repository contains a basic REST API built with Node.js, Express.js, MongoD
     <a href="https://github.com/beckpull/social-network-api"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://drive.google.com/file/d/1sLbUSHUm0UKJLUR87v5fbyDN_cBwLAJ2/view">View Demo</a>
     ·
     <a href="https://github.com/beckpull/social-network-api/issues">Report Bug</a>
     ·
@@ -135,28 +135,36 @@ _To get a local copy up and running follow these simple example steps:_
 </br></br>
 
 <div align="center"> 
-<img src="./assets/qr.png" alt="qr code for demo video">
-<strong><i>Scan the QR code above or click <strong><a href="#">HERE</a></strong> to view a demo video of the following API routes</strong>
+  <img src="./assets/qr.png" width="200" alt="qr code for demo video">
   </br>
-  <a href="https://github.com/beckpull/social-network-api">
-   <p>/api/users</p>
-    <img src="./assets/users.png">
-  </a>
+  </br>
+  <strong><i>Scan the QR code above or click <strong><a href="https://drive.google.com/file/d/1sLbUSHUm0UKJLUR87v5fbyDN_cBwLAJ2/view">HERE</a></strong> to view a demo video of the following API routes</strong>
+    </br>
+    </br>
+    </br>
+    <a href="https://github.com/beckpull/social-network-api">
+    <p>/api/users</p>
+      <img src="./assets/users1.png" width="300">
+      <img src="./assets/users2.png" width="300">
+      <img src="./assets/users3.png" width="523">
+    </a>
+    </br></br>
+    <a href="https://github.com/beckpull/social-network-api">
+      <p>/api/users/:userId/friends/:friendId</p>
+      <img src="./assets/friendsPOST.png" width="605">
+      <img src="./assets/friendsDELETE.png" width="647">
+    </a>
+    </br></br>
+    <a href="https://github.com/beckpull/social-network-api">
+      <p>/api/thoughts</p>
+      <img src="./assets/thoughts.png" width="700">
+    </a>
+    <a href="https://github.com/beckpull/social-network-api">
+      <p>/api/thoughts/:thoughtId/</p>
+      <img src="./assets/singleThought.png" width="700">
+      <img src="./assets/singleThought2.png" width="500">
+    </a>
   </br></br>
-  <a href="https://github.com/beckpull/social-network-api">
-    <p>/api/users/:userId/friends/:friendId</p>
-    <img src="./assets/friends.png">
-  </a>
-  </br></br>
-  <a href="https://github.com/beckpull/social-network-api">
-    <p>/api/thoughts</p>
-    <img src="./assets/thoughts.png">
-  </a>
-  <a href="https://github.com/beckpull/social-network-api">
-    <p>/api/thoughts/:thoughtId/reactions</p>
-    <img src="./assets/reactions.png">
-  </a>
-</br></br>
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

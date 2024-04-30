@@ -1,0 +1,77 @@
+Module 18 Walkthrough Video:
+
+npm run dev
+
+GET /thoughts
+GET /users
+
+POST /users
+{
+    "username": "user-post-route",
+    "email": "post-route@email.com"
+}
+
+                                              userId: 66312c59ae7b5baa8be6f3b5
+
+POST /users/:userId/friends
+{
+	"friendId": "66305eb98e0124bb744546af"
+}
+
+GET /users/:userId
+
+DELETE /users/:userId/friends
+{
+	"friendId": "66305eb98e0124bb744546b2"
+}
+
+PUT /users/:userId
+{
+    "username": "beckpull",
+	"email": "put-user-route@example.com"
+}
+
+POST /thoughts
+{
+    "thoughtText": "This is a POSTed thought",
+    "username": "beckpull"
+}
+                                               thoughtId: 66312c95ae7b5baa8be6f3bd 
+
+POST /thoughts
+{
+    "thoughtText": "This I will DELETE.",
+    "username": "beckpull"
+}
+
+DELETE /thoughts/GRAB SECOND ID FROM UPDATED USER
+
+/GET thoughts
+
+PUT /thoughts/:thoughtId
+{
+	"thoughtText": "This is my NEW thought text using a PUT request."
+}
+
+POST /thoughts/:thoughtId/reactions
+{
+	"reactionBody": "This is a POSTed reaction",
+	"username": "beckpull"
+}
+
+GET /thoughts
+GET /thoughts/:thoughtId
+
+** PASTE reactionId BELOW!!!!! **
+
+DELETE /thoughts/:thoughtId/reactions
+{
+	"reactionId": "66312cd2ae7b5baa8be6f3de"
+}
+
+GET /users/:userId
+
+DELETE /users/:userId
+
+GET /users
+GET /thoughts
