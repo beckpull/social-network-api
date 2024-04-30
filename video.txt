@@ -1,0 +1,66 @@
+Module 18 Walkthrough Video:
+
+npm run dev
+
+GET /users
+GET /thoughts
+
+POST /users
+{
+    "username": "test",
+    "email": "test@email.com"
+}
+
+userId: 663118bd3457292094c3fd6b
+
+POST /users/:userId/friends
+{
+	"friendId": "66305eb98e0124bb744546af"
+}
+
+PUT /users/:userId
+{
+    "username": "beckpull",
+	"email": "put-user-test@example.com"
+}
+
+POST /thoughts
+{
+    "thoughtText": "This is a test thought",
+    "username": "beckpull"
+}
+
+thoughtId: 663119283457292094c3fd71 
+
+PUT /thoughts/:thoughtId
+{
+	"thoughtText": "This is my NEW thought text using a PUT request."
+}
+
+POST /thoughts/:thoughtId/reactions
+{
+	"reactionBody": "This is a test reaction",
+	"username": "beckpull"
+}
+
+
+reactionId: 6631195f3457292094c3fd75
+
+DELETE /thoughts/:thoughtId/reactions
+{
+	"reactionId": "6631195f3457292094c3fd75"
+}
+
+DELETE /users/:userId/friends
+{
+	"friendId": "66305eb98e0124bb744546af"
+}
+
+GET /users/:userId
+
+GET /thoughts/:thoughtId
+
+DELETE /users/:userId
+
+GET /users
+GET /thoughts
