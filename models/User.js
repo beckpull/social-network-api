@@ -15,10 +15,12 @@ const userSchema = new Schema(
       required: [true, "user email required"],
       unique: true
     },
-    thoughts: {
-      type: Schema.Types.ObjectId,
-      ref: 'thought'
-    },
+    thoughts: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'thought'
+      }
+    ],
     friends: [
       {
         type: Schema.Types.ObjectId,

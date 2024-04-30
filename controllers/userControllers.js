@@ -4,16 +4,16 @@ const { Schema, Types, ObjectId } = require('mongoose')
 module.exports = {
   async getUsers(req, res) {
     try {
-      const users = await User.find();
+      const users = await User.find().populate('thoughts').populate('friends');
       res.status(200).json(users);
     } catch (err) {
       console.log(err);
-      res.status(500).json(err);
+      res.status(500).json({ error: 'Internal server error' });
     }
   },
   async getOneUser(req, res) {
     try {
-      const user = await User.findOne({ _id: req.params.userId }).populate('thoughts', 'friends');
+      const user = await User.findOne({ _id: req.params.userId }).populate('thoughts').populate('friends');
 
       if (!user) {
         return res.status(404).json({ message: "No user with that ID found." });
@@ -59,7 +59,7 @@ module.exports = {
       if (!deletedUser) {
         return res.status(404).json({ message: "No user with that ID found." });
       }
-      const deletedThoughts = await Thought.deleteMany({ username: deletedUser.username });
+      const deletedThoughts = await Thought.deleteMany({ username: deletedUser.username },{ runValidators: true, new: true });
 
       res.status(200).json({ deletedUser: deletedUser, deletedThoughts: deletedThoughts });
     } catch (err) {
